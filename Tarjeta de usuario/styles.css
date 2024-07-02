@@ -1,0 +1,124 @@
+
+:root{
+    --rojito: #ff3867;
+    --amarillito: #ffc873;
+    --rosadito: #d37ec6;
+    --marroncito: #a05d5d;
+    --azulito: #2d7cbf;
+    --gricesito: #888888;
+    --purpura: purple;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height:100%;
+}
+
+body{
+   
+    background-image: linear-gradient(to bottom left, 
+    var(--rojito) 0%,
+    var(--amarillito) 50%,
+    var(--rosadito) 100%
+    ); 
+    display: flex;
+    justify-content: center;
+}
+
+/* .generar-espacio{
+    margin-bottom: 2rem;
+} */
+
+
+.card{
+    background-color: white;
+    height: 37.5rem;
+    width: 28.125rem;
+    margin: 4rem;
+    border-radius: 4%;
+    text-align: center;
+    border-radius: 5%;
+    border-top-right-radius: 8%;
+    border-top-left-radius: 8%;
+}
+
+.fondo-card{
+    background-image: url(assets/teclado.jpg);
+    background-size: cover;
+    z-index: -1;
+    padding: 4rem;
+    border-bottom: .3rem solid var(--purpura);
+    border-top-right-radius: 9%;
+    border-top-left-radius: 9%;
+}
+
+.avatar{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    z-index: 0;
+    margin: -6rem;
+    border: .3rem solid var(--purpura);
+}
+
+.descripción{
+    padding: 1.5rem;
+    margin-left: .1rem;
+    margin-right: .1rem;
+    text-align: justify;
+}
+
+.cuerpo-card{
+    margin: 3rem;
+}
+
+h1{
+    font-weight: bolder;
+}
+
+.localizacion{
+    width:1.5rem;
+    height: 1.5rem;
+    color: var(--marroncito);
+}
+
+.lugar-de-residencia{
+    color: #a05d5d;
+    font-weight: 600;
+}
+
+button{
+    border-radius: 40%;
+    padding: .8rem 1.8rem .5rem 1.8rem ;
+    border: .1rem solid var(--azulito);
+    background-color: white;
+    color: var(--azulito);
+    font-weight: 700;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 1.5rem 1.5rem 1.5rem; 
+    padding-top: .5rem;
+}
+
+.datos{
+    margin-top: 2rem;
+    margin-left: -8rem;
+    justify-content: justify;
+    margin-bottom: 1rem;
+}
+
+.hr{
+    border:         none;
+    border-left:    1px solid hsla(200, 10%, 50%,100);
+    height:         3.5rem;
+    width:          1px;   
+}
