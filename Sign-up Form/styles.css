@@ -1,0 +1,245 @@
+
+/* El root de la página */
+
+:root{
+--verde-pantano: #607848;
+--pantano-claro: #789048;
+--pantano-luminoso: #c0d860;
+--cremita: #f0f0d8;
+--marron: #604848;
+--letras-general: rgb(4, 105, 4);
+}
+
+/* fuentes de la página */
+
+/* permanent-marker-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Permanent Marker';
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/fuentes/permanent-marker-v16-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+/* tapestry-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Tapestry';
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/fuentes/tapestry-v4-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+/* reseteo de los estilos del agente */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* estilos body y html */
+
+html {
+    height: 100%;
+    background-color: var(--cremita);
+}
+
+
+body{
+    
+    color: rgb(4, 105, 4);
+    font-weight: 700;
+    min-height: 100vh;
+}
+
+
+/* imagen lateral */
+img{
+    width: 35%;
+    float: left;
+    z-index: -1;
+    position: absolute;
+    height: 150%;
+    object-fit: cover; 
+    
+}
+
+/* la bandita oscura de la imagen y su logo */
+
+.color-fondo{
+    background-color: rgba(0, 0, 0, 0.688);
+    width: 35%;
+    /* float: left; */
+    height: 8rem;
+    /* display: flex; */
+    justify-content: center;
+    margin-top: 20rem;
+    position: absolute;
+    
+
+} 
+
+.gatete{
+    width: 6rem;
+    height: 6rem;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    z-index: 0;
+    margin-left: 5rem; 
+    position: relative;
+    margin-top: 1rem;
+    /* vertical-align: middle; */
+}
+
+.logo{
+    font-size: 2rem;
+    color: white;
+    padding-top: 3.5rem;
+    
+}
+
+/* creditos de la imagen */
+
+.creditos{
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    margin-top: 72rem;
+    margin-left: 20rem;
+    
+}
+
+/* el texto encima del formulario */
+
+.descripcion{
+     padding: 1rem;
+    line-height: 2rem;
+}
+
+ul li{
+    list-style: none;
+}
+
+
+/* comienzan los estilos del formulario */
+
+.formulario{
+    width: 65%;
+    float: right;
+    padding: 2rem 4rem 2rem 4rem;
+}
+
+
+/* estilos de validaciones */
+
+input:invalid{
+    border-color: red;
+}
+
+input:valid{
+    border-color: green;
+}
+
+input:focus, textarea:focus{
+    border: .3rem double var(--verde-pantano);
+    transition: .5s;
+}
+
+
+
+/* los separadores del formulario */
+
+fieldset{
+    padding: 1rem;
+    border-radius: 20px;
+    border: .5rem double var(--verde-pantano);
+}
+
+legend{
+    padding: .5rem;
+    font-family: 'Tapestry';
+    font-size: 1.2rem;
+}
+
+.formato-form{
+    position:relative;
+    display: inline-block;
+    
+   
+}
+
+/* el texto encima del campo */
+
+label{
+ position: absolute; 
+/* margin-top: .5rem; */
+margin-bottom: 4rem;
+margin-left: 2rem;
+font-family: 'Tapestry';
+
+
+}
+
+/* el campo pa escribir */
+
+input{
+/* margin: 1rem 2rem 1rem 4rem; */
+     margin-bottom: .5rem; 
+     margin-top: 2rem;
+    margin-left: 2rem;
+    padding: .4rem 2rem .4rem 2rem;
+    font-family: 'Permanent Marker';
+    border: var(--marron);
+} 
+
+.textarea{
+    padding: .5rem 1rem 2rem 1rem;
+    margin: .2rem 1rem 2rem 1rem;
+    
+}
+textarea{
+    padding: .5rem 1rem 2rem 1rem;
+    margin: 3rem 1rem 2rem 2rem;
+    resize: initial;
+    font-family: 'Permanent Marker';
+    
+    
+}
+
+
+/* los botonetes de envio y reseteo */
+
+.botones{
+    position: absolute;
+    margin: 69rem 1rem 1rem 54rem;
+    padding-bottom: 4rem;
+}
+
+button{
+    margin: .4rem 1rem 1rem 1rem;
+    padding: 1rem;
+    background-color: var(--letras-general);
+    color: var(--cremita);
+    font-family: 'Permanent Marker';
+    font-size: .8rem;
+    
+}
+
+.botones > p{
+margin-left: 4rem;
+}
+
+input, button{
+    border-radius: 15px;
+}
+
+button:hover{
+    transform: scale(1.3);
+    transition: 2s;
+}
+
+a{
+    text-decoration: none;
+    color: var(--letras-general);
+    
+}

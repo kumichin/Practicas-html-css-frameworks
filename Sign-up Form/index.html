@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="assets/iconos/gatete.svg" type="image/x-icon">
+    <title>Sign-up Form by Kumi</title>
+  </head>
+  <body>
+    <div class="formulario">
+      <div class="descripcion">
+        <h3>
+          Esto no es un servicio online real (this is not a real online service)
+        </h3>
+        <ul>
+          <li>🐱 Sabemos que lo necesitas, tu sabes que lo necesitas</li>
+
+          <li>🐱 Porque no ir a por ello</li>
+
+          <li>
+            🐱 Oferta por tiempo limitado para disfrutar y vivir el relx gatuno
+          </li>
+
+          <li>
+            🐱 Dsifruta y experimenta el relax gatuno en nuestros parajes
+            mágicos de ensueño
+          </li>
+
+          <li>
+            🐱 Hay 4 parajes mágicos a elegir, Registrate y nos pondremos en
+            contacto contigo
+          </li>
+
+          <li>🐱 Somos todo lo que le hacia falta a tu vida, y ¡lo sabes!</li>
+        </ul>
+      </div>
+
+      <hr />
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Datos básicos</legend>
+          
+          <div class="formato-form">
+            <label for="nombre">*Nombre </label>
+            <input
+              type="text"
+              name="nombre"
+              placeholder="Dinos tu nombre"
+              id="nombre"
+              minlength="3"
+              required />
+          </div>
+          <div class="formato-form">
+            <label for="apellido">*Apellido </label>
+
+            <input
+              type="text"
+              name="apellido"
+              placeholder="Dinos tu apellido"
+              id="apellido"
+              required />
+          </div>
+          <div class="formato-form">
+            <label for="fecha-cumple">Fecha de tu Cumple</label>
+            <input type="date" name="Cumpleaños" id="fecha-cumple" class="tres"/>
+          </div>
+        </fieldset>
+        <br />
+
+        <fieldset>
+          <legend>Datos de contacto</legend>
+
+          <div class="formato-form">
+            <label for="email">*Email </label>
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Escribe tu email"
+              id="email"
+              required />
+          </div>
+          <div class="formato-form">
+            <label for="telefono">Móvil</label>
+
+            <input
+              type="tel"
+              name="telefono"
+              placeholder="Nº teléfono"
+              id="telefono" />
+          </div>
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+          <legend>Crea tu contraseña. Longitud minima 4</legend>
+
+          <div class="formato-form">
+            <label for="contraseña">*Contraseña</label>
+
+            <input
+              type="password"
+              name="contraseña"
+              placeholder="contraseña"
+              id="contraseña"
+              minlength="4"
+              maxlength="10"
+              required />
+          </div>
+          <div class="formato-form">
+            <label for="confirmar-contraseña">*Confirmar contraseña</label>
+
+            <input
+              type="password"
+              name="confirmacion-contraseña"
+              placeholder="Confirma contraseña"
+              id="contraseña"
+              minlength="4"
+              maxlength="10"
+              required />
+          </div>
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+          <legend>Queremos conocerte mejor</legend>
+
+            <label  class="textarea" for="textarea"
+              >Cuéntanos un poco que esperas de nuestro fantástico programa
+              intensivo</label
+            >
+            
+            <textarea
+              name="información-espectativas-programa"
+              id="textarea"
+              placeholder="Espero de vuestro programa que me ayude a relajarme como un gato, a conectar con la natruraleza..."
+              minlength="4"
+              maxlength="200"
+              rows="4" cols="50">
+            </textarea>
+          </div>
+        </fieldset>
+        <br />
+<div class="botones">
+        <button type="submit">Crea tu cuenta</button>
+        <button type="reset">Vuelve a empezar</button>
+        <p>¿Ya tienes cuenta?. <a href="#">Inicia sesión</a></p>
+      </div>
+      </form>
+    </div>
+    <div class="imagen-lateral">
+      <img
+        src="assets/imagenes/bosqueMágico.jpg"
+        alt="bosque iluminado con luz mágica" />
+      <div class="color-fondo">
+        <img class="gatete" src="assets/iconos/gatete.svg" alt="logo-gato" />
+        <p class="logo">Nature Cat</p>
+      </div>
+      <a
+        class="creditos"
+        href="https://unsplash.com/es/@michael_g_krahn?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+        >imagen por Michael Krahn</a
+      >
+    </div>
+  </body>
+</html>
